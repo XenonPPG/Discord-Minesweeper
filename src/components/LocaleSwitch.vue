@@ -12,7 +12,7 @@ function ChangeLocale() {
 
 <template>
     <button class="cell cell-button" @click="ChangeLocale">
-        <img :src="`/src/assets/img/${locale}.png`">
+        <img :src="`./src/assets/img/${locale}.png`">
     </button>
 </template>
 
