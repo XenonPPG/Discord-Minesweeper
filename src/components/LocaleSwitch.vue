@@ -1,8 +1,11 @@
 <script setup>
 import { i18n } from '@/i18n';
 import { computed } from 'vue';
+import flagEn from '../assets/img/en.png'
+import flagRu from '../assets/img/ru.png'
 
-const locale = computed(() => i18n.global.locale.value);
+const flags = { en: flagEn, ru: flagRu }
+const locale = computed(() => i18n.global.locale.value)
 
 function ChangeLocale() {
     i18n.global.locale.value = locale.value === 'ru' ? 'en' : 'ru';
@@ -12,12 +15,12 @@ function ChangeLocale() {
 
 <template>
     <button class="cell cell-button" @click="ChangeLocale">
-        <img :src="`./src/assets/img/${locale}.png`">
+        <img :src="flags[locale]" alt="flag">
     </button>
 </template>
 
 <style scoped>
-@import '/src/assets/main.css';
+@import '../assets/main.css';
 
 .cell {
     height: min-content;

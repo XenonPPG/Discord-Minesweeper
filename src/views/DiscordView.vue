@@ -112,7 +112,7 @@ watch(
             </Collapsible>
 
             <!-- settings -->
-            <Collapsible class="flex flex-column tab" :open="false">
+            <Collapsible class="flex flex-column tab" :open="true">
                 <template #button>
                     <img src="/src/assets/img/gear.png" class="pixel-art">
                 </template>
@@ -123,7 +123,7 @@ watch(
             </Collapsible>
 
             <!-- additional settings -->
-            <Collapsible class="flex flex-column tab" :open="true">
+            <Collapsible class="flex flex-column tab">
                 <template #button>
                     <img src="/src/assets/img/red gear.png" class="pixel-art">
                 </template>
