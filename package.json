@@ -8,9 +8,10 @@
     "build": "vite build",
     "preview": "vite preview",
     "deploy": "gh-pages -d dist",
-    "redeploy": "npm run build && npm run deploy"
+    "redeploy": "npm run build && git add . && git commit -m \"redeploy\" && git push origin main && npm run deploy"
   },
   "dependencies": {
+    "@intlify/unplugin-vue-i18n": "^6.0.8",
     "@vueuse/motion": "^3.0.3",
     "pinia": "^3.0.2",
     "vue": "^3.5.13",

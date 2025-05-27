@@ -1,12 +1,9 @@
-import en from '@/locales/en.json'
-import ru from '@/locales/ru.json'
 import { createI18n } from 'vue-i18n'
+import messages from '@intlify/unplugin-vue-i18n/messages'
 
 export const i18n = createI18n({
+  legacy: false,
   locale: 'en',
-  fallbackLocale: 'ru',
-  messages: {
-    en,
-    ru
-  }
+  fallbackLocale: 'en',
+  messages
 })

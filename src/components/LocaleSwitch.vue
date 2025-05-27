@@ -9,7 +9,6 @@ const locale = computed(() => i18n.global.locale.value)
 
 function ChangeLocale() {
     i18n.global.locale.value = locale.value === 'ru' ? 'en' : 'ru';
-    console.log(locale.value);
 }
 </script>
 
