@@ -8,7 +8,8 @@
     "build": "vite build",
     "preview": "vite preview",
     "deploy": "gh-pages -d dist",
-    "redeploy": "npm run build && npm run deploy"
+    "redeploy": "npm run build && npm run deploy",
+    "commit": "git add . && git commit -m \"fix\" && git push origin main"
   },
   "dependencies": {
     "@vueuse/motion": "^3.0.3",
