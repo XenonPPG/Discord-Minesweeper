@@ -1,0 +1,80 @@
+{
+  "titles": {
+    "copy": "Copy",
+    "me": "Me fr"
+  },
+  "toasts": {
+    "copied": "Copied to clipboard!"
+  },
+  "router": {
+    "discord": "Discord",
+    "support": "Support"
+  },
+  "gs": {
+    "header": "Field",
+    "size": {
+      "title": "Size",
+      "width": "Width",
+      "height": "Height",
+      "cells": "Cells"
+    },
+    "mines": {
+      "title": "Mines",
+      "amount": "Amount"
+    }
+  },
+  "as": {
+    "header": "Additional",
+    "draw": "Draw mode",
+    "additional_text": {
+      "primary": "Additional text",
+      "secondary": "(size, number of mines)"
+    },
+    "show_field": "Show field",
+    "no_spoilers": {
+      "primary": "Do not hide field",
+      "secondary": "(in Discord)"
+    }
+  },
+  "field": {
+    "size": "Size",
+    "mines": "Mines",
+    "corners": "Corners are safe"
+  },
+  "info": {
+    "header": "Information",
+    "play": {
+      "title": "How to play",
+      "content": "The number in a cell shows the number of mines in the 8 surrounding cells"
+    },
+    "draw": {
+      "title": "How to draw",
+      "content": {
+        "part_1": "You can place/remove a mine by clicking on the cell",
+        "part_2": {
+          "1": "In",
+          "2": "additional settings",
+          "3": "there is an option",
+          "4": "draw mode",
+          "5": "which allows drawing over the field in one continuous line"
+        }
+      }
+    },
+    "discord": {
+      "title": "Discord",
+      "content": {
+        "1": "Click the copy button",
+        "2": "and paste the resulting text into the message"
+      }
+    }
+  },
+  "support": {
+    "header": "Support the author",
+    "thanks": {
+      "1": "Thank you for visiting the site",
+      "2": "If you liked it, you can support the author"
+    },
+    "tron": "TRX wallet",
+    "email": "Email"
+  }
+}
