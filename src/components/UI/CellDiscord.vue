@@ -50,7 +50,7 @@ function ToggleMine(forceToggle) {
 
 <template>
   <button @click="() => ToggleMine(true)" class="game-cell" @mousemove="() => ToggleMine(false)" @mouseleave="() => toggled = false">
-    <div class="cell-content">
+    <div class="cell-content no-select">
       <div v-if="additionalSettings.fieldVisible" class="inner-cell" v-motion-pop>
         <p v-if="!isMine && count > 0" :key="`num-${x}-${y}`" :style="{ color: textColor }">
           {{ count }}

@@ -12,25 +12,25 @@ const additionalSettings = useAdditionalStore();
                 <!-- drawing mode -->
                 <div class="flex">
                     <input type="checkbox" id="drawing-mode-checkbox" class="checkbox" v-model="additionalSettings.drawingMode">
-                    <label for="drawing-mode-checkbox">{{ $t("as.draw") }}</label>
+                    <label class="no-select" for="drawing-mode-checkbox">{{ $t("as.draw") }}</label>
                 </div>
 
                 <!-- additional text -->
                 <div class="flex">
                     <input type="checkbox" id="additional-text-checkbox" class="checkbox" v-model="additionalSettings.additionalText">
-                    <label for="additional-text-checkbox">{{ $t("as.additional_text.primary") }}<br><span class="secondary">{{ $t("as.additional_text.secondary") }}</span></label>
+                    <label class="no-select" for="additional-text-checkbox">{{ $t("as.additional_text.primary") }}<br><span class="secondary">{{ $t("as.additional_text.secondary") }}</span></label>
                 </div>
 
                 <!-- field visible -->
                 <div class="flex">
                     <input type="checkbox" id="reveal-field-checkbox" class="checkbox" v-model="additionalSettings.fieldVisible">
-                    <label for="reveal-field-checkbox">{{ $t("as.show_field") }}</label>
+                    <label class="no-select" for="reveal-field-checkbox">{{ $t("as.show_field") }}</label>
                 </div>
 
                 <!-- no spoilers -->
                 <div class="flex">
                     <input type="checkbox" id="reveal-field-discord-checkbox" class="checkbox" v-model="additionalSettings.noSpoilers">
-                    <label for="reveal-field-discord-checkbox">{{ $t("as.no_spoilers.primary") }}<br><span class="secondary">{{ $t("as.no_spoilers.secondary") }}</span></label>
+                    <label class="no-select" for="reveal-field-discord-checkbox">{{ $t("as.no_spoilers.primary") }}<br><span class="secondary">{{ $t("as.no_spoilers.secondary") }}</span></label>
                 </div>
                 <br>
             </div>
