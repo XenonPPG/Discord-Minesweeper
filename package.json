@@ -7,20 +7,18 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "deploy": "gh-pages -d dist",
-    "redeploy": "npm run build && npm run deploy",
-    "commit": "git add . && git commit -m \"fix\" && git push origin main"
+    "build-preview": "npm run build && npm run preview",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@vueuse/motion": "^3.0.3",
     "pinia": "^3.0.2",
     "vue": "^3.5.13",
-    "vue-i18n": "^12.0.0-alpha.2",
+    "vue-i18n": "^11.1.5",
     "vue-router": "^4.5.0",
     "vue-toastification": "^2.0.0-rc.5"
   },
   "devDependencies": {
-    "@intlify/unplugin-vue-i18n": "^6.0.8",
     "@vitejs/plugin-vue": "^5.2.3",
     "gh-pages": "^6.3.0",
     "vite": "^6.2.4",
