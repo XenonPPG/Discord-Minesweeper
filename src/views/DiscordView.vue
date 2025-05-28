@@ -44,7 +44,11 @@ function CopyField() {
             `* ${i18n.global.t("field.size")}: ${minesweeper.width}x${minesweeper.height}
 * ${i18n.global.t("field.mines")}: ${minesweeper.mines}
 `
-        if (!additionalSettings.noSpoilers) {
+        if (!additionalSettings.noSpoilers
+            && minesweeper.field[0][0] !== -1
+            && minesweeper.field[0][minesweeper.width - 1] !== -1
+            && minesweeper.field[minesweeper.height - 1][0] !== -1
+            && minesweeper.field[minesweeper.height - 1][minesweeper.width - 1] !== -1) {
             result += `**${i18n.global.t("field.corners")}**\n`
         }
     }
@@ -138,6 +142,7 @@ watch(
 
 <style scoped>
 @import '/src/assets/main.css';
+
 .tab {
     text-align: center;
     align-items: end;
