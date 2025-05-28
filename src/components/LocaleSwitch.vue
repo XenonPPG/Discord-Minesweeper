@@ -1,5 +1,6 @@
 <script setup>
 import { i18n } from '@/i18n';
+import { setLocale } from '@/i18n'
 import { computed } from 'vue';
 import flagEn from '../assets/img/en.png'
 import flagRu from '../assets/img/ru.png'
@@ -8,7 +9,7 @@ const flags = { en: flagEn, ru: flagRu }
 const locale = computed(() => i18n.global.locale.value)
 
 function ChangeLocale() {
-    i18n.global.locale.value = locale.value === 'ru' ? 'en' : 'ru';
+    setLocale(locale.value == 'en' ? 'ru' : 'en');
 }
 </script>
 
