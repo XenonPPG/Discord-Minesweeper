@@ -11,8 +11,8 @@ const additionalSettings = useAdditionalStore();
             <div>
                 <!-- drawing mode -->
                 <div class="flex">
-                    <input type="checkbox" id="reveal-field-discord-checkbox" class="checkbox" v-model="additionalSettings.drawingMode">
-                    <label for="reveal-field-discord-checkbox">{{ $t("as.draw") }}</label>
+                    <input type="checkbox" id="drawing-mode-checkbox" class="checkbox" v-model="additionalSettings.drawingMode">
+                    <label for="drawing-mode-checkbox">{{ $t("as.draw") }}</label>
                 </div>
 
                 <!-- additional text -->
