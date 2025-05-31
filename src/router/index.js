@@ -1,4 +1,6 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
+import DiscordViewVue from '../views/DiscordView.vue'
+import SupportViewVue from '../views/SupportView.vue'
 
 
 const router = createRouter({
@@ -7,12 +9,12 @@ const router = createRouter({
     {
       path: '/',
       name: 'discord',
-      component: () => import('../views/DiscordView.vue'),
+      component: DiscordViewVue,
     },
     {
       path: '/support',
       name: 'support',
-      component: () => import('../views/SupportView.vue'),
+      component: SupportViewVue,
     },
   ],
 })
